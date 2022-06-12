@@ -1,0 +1,27 @@
+<script>
+    // <!-- ARRAY DESTRUCTURING -->
+    console.log('ARRAY DESTRUCTURING');
+
+    const favLang = ['js', 'php', 'python', 'java'];
+
+    //ES5 method
+    console.log('ES5 MRTHOD');
+    let top1 = favLang[0];
+    let top2 = favLang[1];
+    let top3 = favLang[2];
+    let top4 = favLang[3];
+    console.log('raja' + ' ' + top1, top2, top3, top4);
+
+
+    //ES6
+    console.log('ES6 MRTHOD');
+    [top1, top2, top3, top4] = favLang;
+    console.log('usamn' + ' ' + top1, top2, top3, top4);
+
+    // grab first and last element 
+    console.log('grab first and last element');
+    [top1, , , last] = favLang;
+    console.log(`${top1} ${last}`);
+
+
+</script>
